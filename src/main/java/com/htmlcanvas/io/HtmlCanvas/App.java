@@ -28,11 +28,10 @@ public class App {
 
 		
 		 Actions builder = new Actions(driver);
+		 builder.clickAndHold(element).moveByOffset(0, -150).release().perform();
 		 builder.clickAndHold(element).moveByOffset(0, 150).release().perform();
+		 builder.clickAndHold(element).moveByOffset(-150, 0).release().perform();
 		 builder.clickAndHold(element).moveByOffset(150, 0).release().perform();
-		 
-            
-   
         
     }
     
